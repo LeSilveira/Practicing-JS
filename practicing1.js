@@ -107,3 +107,31 @@ runFunc()
 setTimeout(runFunc, 2000);
 setTimeout(runFunc, 6000);
 setTimeout(runFunc, 12000);*/
+
+
+// TESTING FETCH METHOD
+/*function test1(value){
+    console.log(`first function ran`);
+    return value.json();
+}
+
+function test2(value){
+    console.log(`second function ran`);
+    console.log(value.name);
+}
+
+fetch(`https://dattebayo-api.onrender.com/characters/1344`).then(test1).then(test2);*/
+
+
+// TESTING THE toPrimitive PROPERY TO COERSE OBJECTS INTO NUMBERS 
+/*let obj1 = {"name": "leandro", "age": 25}
+let obj2 = {"name": "leandro", "age": "25"}
+
+obj1[Symbol.toPrimitive] = () => 105;
+obj2[Symbol.toPrimitive] = () => 105;
+
+if (+obj1 === +obj2){
+    console.log(`theyre equals`);
+}else{
+    console.log(`theyre not equals`)
+}*/
